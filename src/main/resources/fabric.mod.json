@@ -1,27 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "myrino",
-  "version": "1.0.0",
-  "name": "Myrino Mod",
-  "description": "My super cool Fabric mod template for MC 1.21.1.",
+  "id": "myrino_bbmod",
+  "version": "${version}",
+  "name": "Myrino - Infinite Tower Survival",
+  "description": "A comprehensive Fabric mod adding infinite tower survival gameplay with custom entities, animations, and boss encounters",
   "authors": [
     "Wakcedon"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Wakcedon/myrino-bbmod",
+    "sources": "https://github.com/Wakcedon/myrino-bbmod"
   },
   "license": "MIT",
+  "icon": "assets/myrino/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.beyondblocks.myrino.MyrinoMod"
+      "com.wakcedon.myrino.MyrinoMod"
+    ],
+    "client": [
+      "com.wakcedon.myrino.MyrinoModClient"
     ]
   },
-  "mixins": [],
+  "mixins": [
+    "myrino.mixins.json"
+  ],
   "depends": {
-    "fabricloader": ">=0.15.7",
-    "fabric": "*",
-    "minecraft": "1.21.1"
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "fabric-api": "*"
   }
 }
