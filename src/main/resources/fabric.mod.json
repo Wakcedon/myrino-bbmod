@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "myrino",
+  "version": "1.0.0",
+  "name": "Myrino Mod",
+  "description": "My super cool Fabric mod template for MC 1.21.1.",
+  "authors": [
+    "Wakcedon"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.beyondblocks.myrino.MyrinoMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "fabric": "*",
+    "minecraft": "1.21.1"
+  }
+}

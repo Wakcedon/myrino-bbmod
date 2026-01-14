@@ -1,0 +1,16 @@
+/.gradle/
+/build/
+/out/
+!.gradle/gradle.properties
+.gradle/
+/run/
+.idea/
+/*.iml
+*.ipr
+*.iws
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
